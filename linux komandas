@@ -1,0 +1,17 @@
+  1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox /atver pārlūku
+    4  uname / sistēmas informācija
+    5  uname -a / sistēmas informācija
+    6  echo $0 / aizņem mazāk kā shell
+    7  whoami / kas es esmu sistēmā
+    8  who / 
+    9  man uname / sistēmas informācija
+   10  history / atver vēsturi
+   11  uname / sistēmas informācija
+   12  sh / shells
+   13  [wd
+   14  pwd /  parādīt ceļu uz sakumu kur kas ir
+   15  ls / direktorijs
+   16  ls -l /  direktorijs 
+   17  history / vēsture
