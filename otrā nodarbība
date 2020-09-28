@@ -97,3 +97,6 @@ datormācības (pamatkurss) elekroniskā kldae
    97  whoami
    98  groups
    99  history
+   
+    echo $? // parada kura kluda ja nav tad rada 0
+    
