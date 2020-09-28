@@ -1,0 +1,99 @@
+# Pauls
+datormācības (pamatkurss) elekroniskā kldae
+ 3  ls
+    4  whereis ls
+    5  ls -l /bin/ls
+    6  echo $0
+    7  cat /bin/ls
+    8  whereis ls
+    9  cd /
+   10  tree
+   11  cd
+   12  whereis ls
+   13  echo $PATH
+   14  ls /bin
+   15  ls -l /bin
+   16  pwd
+   17  ls -lt
+   18  nano my_first_shell_script.sh
+   19  ps aux
+   20  ps aux | grep nano
+   21  fg
+   22  nano fg
+   23  man fg
+   24  nano my_first_shell_script.sh
+   25  ls -lt
+   26  pwd
+   27  cd ?
+   28  cd /
+   29  pwd
+   30  cd
+   31  pwd
+   32  ls -lt
+   33  nano my_first_shell_script.sh
+   34  cd /
+   35  pwd
+   36  nano aaa.sh
+   37  pwd
+   38  ls ~/aaa.sh
+   39  ls -a
+   40  cd
+   41  pwd
+   42  ls -lt
+   43  echo $PATH
+   44  pwd
+   45  echo $PATH
+   46  ls -l
+   47  pwd
+   48  nano aaa.txt
+   49  fg
+   50  cp aaa.sh ccc.sh
+   51  ls
+   52  pwd
+   53  echo $PATH
+   54  PATH=PATH:~
+   55  echo $PATH
+   56  ls
+   57  PATH=/usr/local/anaconda3/bin:/opt/intelFPGA_lite/17.1/quartus/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/user/.dotnet/tools
+   58  echo $PATH
+   59  ls
+   60  PATH=$PATH:~
+   61  echo $PATH
+   62  ls
+   63  ls -l
+   64  cat my_first_shell_script.sh
+   65  ls -l
+   66  ls
+   67  whereis ls
+   68  /bin/ls
+   69  pwd
+   70  ls
+   71  /home/user/my_first_shell_script.sh
+   72*
+   73  ls -l
+   74  cd /
+   75  /home/user/my_first_shell_script1.sh
+   76  /home/user/my_first_shell_script.sh
+   77  cd
+   78  ls -l
+   79  ls -l /bin/ls
+   80  ls -l
+   81  cat my_first_shell_script.sh
+   82  nano my_first_shell_script.sh
+   83  ls -l
+   84  chmod 754 my_first_shell_script.sh
+   85  ls -l
+   86  my_first_shell_script.sh
+   87*
+   88  ls -lt
+   89  ls -lrt
+   90  ls -lt
+   91  ls ABC/
+   92  ls EFG/
+   93  ls -l EFG/c.txt
+   94  cat my_first_shell_script.sh
+   95  ls -lt
+   96  groups
+   97  whoami
+   98  groups
+   99  history
