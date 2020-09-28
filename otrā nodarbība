@@ -100,3 +100,152 @@ datormācības (pamatkurss) elekroniskā kldae
    
     echo $? // parada kura kluda ja nav tad rada 0
     
+    /n parnes otra rindaa
+    
+    main()
+    {
+    // write, print, echo
+    printf("hello world!\n");
+    
+    return 0,
+    }
+
+user@epk428-18:~$ echo $?
+0
+user@epk428-18:~$ pwd
+/home/user
+user@epk428-18:~$ git clone https://github.com/alberings/Pauls
+Cloning into 'Pauls'...
+remote: Enumerating objects: 9, done.
+remote: Counting objects: 100% (9/9), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 9 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (9/9), done.
+user@epk428-18:~$ git clone https://github.com/alberings/Pauls
+fatal: destination path 'Pauls' already exists and is not an empty directory.
+user@epk428-18:~$ git clone https://github.com/alberings/Pauls
+fatal: destination path 'Pauls' already exists and is not an empty directory.
+user@epk428-18:~$ nano first.c
+user@epk428-18:~$ git clone https://github.com/alberings/Pauls
+fatal: destination path 'Pauls' already exists and is not an empty directory.
+apt install sl
+Please ask your administrator.
+
+user@epk428-18:~$ ls
+ Desktop     Downloads   Pauls      Public      Videos
+ Documents   Music       Pictures   Templates  'VirtualBox VMs'
+user@epk428-18:~$ echo $PAULS
+
+user@epk428-18:~$ PWD
+PWD: command not found
+user@epk428-18:~$ pwd
+/home
+user@epk428-18:~$ quartus
+quartus: command not found
+user@epk428-18:~$ nano Pauls
+user@epk428-18:~$ ls -lt
+user@epk428-18:~$ nano Pauls
+user@epk428-18:~$ ./Pauls
+bash: ./Pauls: Is a directory
+user@epk428-18:~$
+user@epk428-18:~$ gcc
+gcc: fatal error: no input files
+compilation terminated.
+user@epk428-18:~$ gcc Pauls
+/usr/bin/ld: cannot find Pauls: File format not recognized
+collect2: error: ld returned 1 exit status
+user@epk428-18:~$ 
+user@epk428-18:~$ history
+    1  VirtualBox --startvm XP
+    2  quartus
+    3  firefox &
+    4  pwd
+    5  firefox &
+    6  path
+    7  PATH=$PATH
+    8  CD
+    9  echo $PATH
+   10  ls -lt
+   11  echo $?
+   12  PATH=$PATH
+   13  echo $?
+   14  pwd
+   15  git clone https://github.com/alberings/Pauls
+   16  ls -lt
+   17  ls -lta
+   18  ls -la
+   19  git clone https://github.com/alberings/Pauls
+   20  nano first.c
+   21  git clone https://github.com/alberings/Pauls
+   22  ls -la
+   23  bin/ls
+   24  /bin/ls
+   25  nano Pauls
+   26  home/user/pauls
+   27  pwd
+   28  /home/user/Pauls
+   29  pwd
+   30  ~/Pauls
+   31  ls /Pauls
+   32  ls Pauls
+   33  ls Pauls/
+   34  cd
+   35  nano Pauls
+   36  who
+   37  whomai
+   38  ls -lt
+   39  ls /Pauls
+   40  ls /Downloads
+   41  ls Pauls/
+   42  ls ~/Pauls
+   43  man Pauls
+   44  ps aux
+   45  echo $PATH
+   46  LS
+   47  ls
+   48  echo $PAULS
+   49  PWD
+   50  pwd
+   51  echo Pauls
+   52  pwd
+   53  Pauls
+   54  cmd
+   55  quartus
+   56  nano Pauls
+   57  ls -lt
+   58  nano Pauls
+   59  ./Pauls
+   60  gcc
+   61  gcc Pauls
+   62  history
+user@epk428-18:~$ history >history_20200928.txt
+user@epk428-18:~$ ls -lt
+user@epk428-18:~$ cd ./pauls/
+bash: cd: ./pauls/: No such file or directory
+user@epk428-18:~$ cd ./pauls/
+bash: cd: ./pauls/: No such file or directory
+user@epk428-18:~$ git config --global user.email a.pauls@inbox.lv
+user@epk428-18:~$ rm *.out
+
+// tikt iekšā githuba mapē ubunutā
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
