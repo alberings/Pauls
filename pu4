@@ -11,6 +11,16 @@ int main()
     printf("izvelies datu tipu char(1)dec(2)long long(3)");
     scanf("%d", &tips);
 
+    if (tips > 3);
+    {
+        printf("nav izvelets datu tips>> megini velreiz \n");
+    }
+    if (tips < 1);
+    {
+        printf("nav izvelets datu tips>> megini velreiz \n");
+    }
+    
+
     if (tips == 2);
     {
         printf("ieavdi decimal sakitli>>>> \n");
