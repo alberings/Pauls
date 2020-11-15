@@ -20,7 +20,7 @@ int main()
                 f=f*i;
                 i++;
                }
-        printf("\n The Factorial of %d is %d",dec,f);
+        printf("\n faktorials no %d ir %d",dec,f);
 
     }
 
@@ -33,7 +33,7 @@ int main()
                 f=f*i;
                 i++;
                }
-          printf("\n The Factorial of %c is %c",dec,f);
+          printf("\n faktorials no %c ir %c",dec,f);
 
     }
 
@@ -47,7 +47,7 @@ int main()
                 f=f*i;
                 i++;
                }
-            printf("\n The Factorial of %lld is %lld",dec,f);
+            printf("\n faktorials no %lld ir %lld",dec,f);
 
     }
 
