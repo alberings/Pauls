@@ -8,7 +8,7 @@ int main()
     long long decim;
     int dec,tips,i=1,f=1;
 
-    printf("hey char(1)dec(2)long long(3)");
+    printf("izvelies datu tipu char(1)dec(2)long long(3)");
     scanf("%d", &tips);
 
     if (tips == 2);
