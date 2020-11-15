@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+
+
+int main()
+{
+    char deci;
+    long long decim;
+    int dec,tips,i=1,f=1;
+
+    printf("hey char(1)dec(2)long long(3)");
+    scanf("%d", &tips);
+
+    if (tips == 2);
+    {
+        printf("ieavdi decimal sakitli>>>> \n");
+        scanf("%d", &dec);
+        while (i<=dec)
+               {
+                f=f*i;
+                i++;
+               }
+        printf("\n The Factorial of %d is %d",dec,f);
+
+    }
+
+    if (tips == 1)
+    {
+        printf("ieavdi decimal sakitli>>>> \n");
+        scanf("%c", &deci);
+            while (i<=deci)
+               {
+                f=f*i;
+                i++;
+               }
+          printf("\n The Factorial of %c is %c",dec,f);
+
+    }
+
+
+    if (tips == 3)
+    {
+        printf("ieavdi decimal sakitli>>>> \n");
+        scanf("%lld", &decim);
+            while (i<=decim)
+               {
+                f=f*i;
+                i++;
+               }
+            printf("\n The Factorial of %lld is %lld",dec,f);
+
+    }
+
+
+
+
+
+    return 0;
+}
