@@ -1,0 +1,64 @@
+//////////////// bez argumentiem un bez return
+#include <stdio.h>
+
+void sk();
+
+int main()
+{
+    sk();
+    return 0;
+}
+void sk()
+{
+    int a,b,c=5;
+    b=a+c
+    printf(" summa ir %d\n",b);
+    
+}
+//////////////////////////////////////////// bez argumentiem un ar return
+#include <stdio.h>
+
+int I();
+
+int main()
+{
+    int a, b, c=2;
+    b=a+c
+    printf("%d\n",b);
+    return b;
+}
+//////////////////////ar argumentiem un bez return,
+#include <stdio.h>
+void a( int b);  
+int main()
+{
+  int b;
+  printf("ievadi skaitli");
+  scanf("%d",&b);
+  a(b);
+  return 0;
+}
+void a(int b)
+{
+  int c;
+  c = b * b;
+  printf("reizinajums ir = %d",c);
+}
+////////////////////////////ar argumentiem un ar return.
+#include <stdio.h>
+int a(int b);
+int main()
+{
+  int c,b;
+  printf("ievadi skaitli :");
+  scanf("%d",&b);
+  c = a(b);    
+  printf("skaitlu reizinajums %d",c);
+  return 0;
+}
+int a(int b)
+{
+  int c;
+  c = b * b;
+  return c;
+}
