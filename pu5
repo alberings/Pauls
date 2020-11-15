@@ -1,0 +1,59 @@
+#include <stdio.h>
+
+
+
+int main()
+{
+    int tips,dec,fact=1,i;
+    long long int deci, facto=1;
+    char decim,factor=1;
+
+
+    printf("izvelies datu tipu>>>dec(1)char(2)long long(3) \n");
+    scanf("%d", &tips);
+
+    if (tips == 1)
+    {
+        printf("ievadi decimal skaitli>>> \n");
+        scanf("%d", &dec);
+        for (i = 1; i<=dec; ++i)
+            {
+                fact =fact * i;
+            }
+        printf("Factorial of %d = %d", dec, fact);
+    }
+      if (tips == 2)
+    {
+        printf("ievadi decimal skaitli>>> \n");
+        scanf("%c", &decim);
+        if (decim== "%c"){
+        for (i = 1; i<=decim; ++i)
+            {
+                factor =factor * i;
+            }
+        printf("Factorial of %d = %c", decim, factor);
+        }
+    }
+      if (tips == 3)
+    {
+        printf("ievadi decimal skaitli>>> \n");
+        scanf("%lli", &deci);
+        for (i = 1; i<=deci; ++i)
+            {
+                facto =facto * i;
+            }
+        printf("Factorial of %d = %lli", deci, fact);
+    }
+    if (tips < 1)
+    {
+        printf("nav izvelets pareizs datu tips");
+    }
+    if (tips > 3)
+    {
+        printf("nav izvelets pareizs datu tips");
+    }
+
+
+
+    return 0;
+}
