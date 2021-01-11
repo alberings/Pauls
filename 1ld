@@ -1,0 +1,49 @@
+#include <stdio.h>
+#include<math.h>
+
+
+
+
+int main()
+{
+    int i;
+    int fact =1, n1 = 500,n2= 499;
+    float sum1 = 0, summ = 0, x;
+
+    printf("cos aprekinasana. \n");
+    printf("ievadi argumentu x: ");
+    scanf("%f", &x);
+    printf(" cos(%f)= \n",x);
+    printf("\n a0 = %f s0 = %f \n",x,x);
+    for (i=1;i<n2;i++)
+    {
+        fact = fact *i;
+        sum1 = sum1 + (pow(x,i)/fact);
+    }
+     sum1 = sum1 +1;
+    printf("a499 = %.19f s499 = %.2f\n",x,sum1);
+    for (i=1;i<n1;i++)
+    {
+        fact = fact *i;
+        summ = summ + (pow(x,i)/fact);
+    }
+    summ = summ + 1;
+
+    printf("a500 = %.19f s500 = %.2f\n",x,summ);
+
+    printf("cos(%.2f) caur summu: %.2f\n",x ,x);
+    printf(" \n");
+    printf("             500            \n");
+    printf("            ______  \n");
+    printf("            \\           k    2*k  \n");
+    printf("              \\      (-1) * x  \n");
+    printf("    cos(%.2f) = >   _____________    \n",x);
+    printf("              //       (2 * k)! \n");
+    printf("            //____           \n");
+    printf("              k=0      \n\n");
+    printf("\n\n                                 2   \n");
+    printf("                              (-1)     \n");
+    printf("   rekurences reizinatajs: __________   \n");
+    printf("                            (2*k+1)\n\n");
+    return 0;
+}
