@@ -1,45 +1,33 @@
-#include <stdio.h>
-#include <stdlib.h>
- int k = 0;
-float a,b,c,x,prx;
+#include<stdio.h>
+#include<math.h>
 
 int main()
 {
+    float s,a,b,prx,pirmf,otraf;
+    printf("Ievadiet a un b vertibu: ");
+    scanf("%f %f", &a,&b);
+    printf("\n ievadiet precizitates vertibu: ");
+    scanf("%f",&prx);
 
-
-    printf("\n ievadi a vertiibu: ");
-    scanf("%f", &a);
-    printf("\n ievadi b vertiibu: ");
-    scanf("%f", &b);
-    printf("\n ievadi c vertiibu : ");
-    scanf("%f", &c);
-    printf("ievadi precizitaates vertiibu: \n");
-    scanf("%f", &prx);
-
-    
-    while ((b-a)>prx)
+    int count = 0;
+    if (pirmf*otraf>0)
     {
-        k++;
-        x=(b+a)/2;
-        if((a,c)*(x,c)>0)
-        {
-           a=x;
-        }
-        else
-            {
-                b=x;
-            }
-        else 
-            {
-                printf("sakne nav iespējama");
-            }
-            
-        
+    printf("saknu nav vai ir paru saknu skaits");
+    return 1;
     }
-        printf("vertiba : f\n",x);
-        printf("relais:f(x)= %f\n", x);
-        printf("iterāciju skaits: %d\n",k);
+    printf("1.(%13.2f)=%13.2f",a,pirmf);
+    printf("2.(%13.2f)=%13.2f",b,otraf);
+
+    while ((otraf-a)>prx)
+    {
+    count++;
+    if (pirmf > 0)
+        a = s;
+    else
+        b = s;
 
 
-    return 0;
+        }
+        printf("Sakne atrodas: %.2f \n",s);
+        printf("lai aprekinatu ir vajadzigas %d iteraciju skaits \n", count);
 }
