@@ -1,0 +1,45 @@
+#include <stdio.h>
+#include <stdlib.h>
+ int k = 0;
+float a,b,c,x,prx;
+
+int main()
+{
+
+
+    printf("\n ievadi a vertiibu: ");
+    scanf("%f", &a);
+    printf("\n ievadi b vertiibu: ");
+    scanf("%f", &b);
+    printf("\n ievadi c vertiibu : ");
+    scanf("%f", &c);
+    printf("ievadi precizitaates vertiibu: \n");
+    scanf("%f", &prx);
+
+    
+    while ((b-a)>prx)
+    {
+        k++;
+        x=(b+a)/2;
+        if((a,c)*(x,c)>0)
+        {
+           a=x;
+        }
+        else
+            {
+                b=x;
+            }
+        else 
+            {
+                printf("sakne nav iespējama");
+            }
+            
+        
+    }
+        printf("vertiba : f\n",x);
+        printf("relais:f(x)= %f\n", x);
+        printf("iterāciju skaits: %d\n",k);
+
+
+    return 0;
+}
