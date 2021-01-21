@@ -41,9 +41,9 @@ int main()
     printf("              //       (2 * k)! \n");
     printf("            //____           \n");
     printf("              k=0      \n\n");
-    printf("\n\n                                    \n");
-    printf("                              (x)     \n");
+    printf("\n\n                              2      \n");
+    printf("                              (-x)     \n");
     printf("   rekurences reizinatajs: __________   \n");
-    printf("                            (2*(k+1))\n\n");
+    printf("                            2*k*(2*k-1)) \n\n");
     return 0;
 }
