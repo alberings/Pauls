@@ -1,0 +1,34 @@
+ 
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+    float s,a,b,prx,pirmf,otraf;
+    printf("Ievadiet a un b vertibu: ");
+    scanf("%f %f", &a,&b);
+    printf("\n ievadiet precizitates vertibu: ");
+    scanf("%f",&prx);
+
+    int count = 0;
+    if (pirmf*otraf>0)
+    {
+    printf("saknu nav vai ir paru saknu skaits");
+    return 1;
+    }
+    printf("1.(%13.2f)=%13.2f",a,pirmf);
+    printf("2.(%13.2f)=%13.2f",b,otraf);
+
+    while ((otraf-a)>prx)
+    {
+    count++;
+    if (pirmf > 0)
+        a = s;
+    else
+        b = s;
+
+
+        }
+        printf("Sakne atrodas: %.2f \n",s);
+        printf("lai aprekinatu ir vajadzigas %d iteraciju skaits \n", count);
+}
