@@ -1,0 +1,143 @@
+ #include <stdio.h>
+#include <math.h>
+///////// min max vid medianu modu sakartot rindā augoši pec ascii un tad alfabetiski rindā
+ int main()
+ {
+     float num[100];
+     int max,min,x,n,nv,avg;
+     int skitsburtiem[0];
+     int skaitscipariem[10];
+     int array[25];
+     int sum = 0;
+     int i = 0;
+     int a[100];
+     char name[20];
+     int test = 3;
+
+    
+     printf("ievadi simbolu: ");
+     ////parada simbola vertibu
+     scanf("%c", &name);
+
+
+
+     while(name[i])
+     {
+        printf("\n ascii vertiba simbolam  %c ir %d",name[i],name[i]);
+        sum = sum + name[i];
+        i++;
+     }
+        printf("\n summa ascii vertiba ir : %d",sum);
+
+
+        //// min max
+
+    printf("\n ievadi simbolu skaitu: ");
+    scanf("%d", &n);
+    printf("ievadi elementus \n");
+    for (x=0;x<n;x++)
+    {
+        printf("\n ievadi simbolus %d: ", x+1);
+        scanf("%d", &array[x]);
+    }
+        max = array[0];
+        min = array[0];
+
+
+        for(x=0;x<n;x++)
+        {
+
+        if (array[x]<max)
+            {
+            max= array[x];
+            }
+        if (array[x]>min)
+            {
+            min= array[x];
+            }
+        }
+        printf("\n min : %d", min);
+        printf("\n max : %d",max);
+
+    //// videjais
+        printf("ievadi cik skaitlus ievadisi: ");
+        scanf("%d", &nv);
+        for(i=0;i<n;++i)
+        {
+            printf("%d. ievadi skaitli: ",i+1);
+            scanf("%f", &num[i]);
+            sum +=num[i];
+        }
+        avg = sum / n;
+        printf("videjais = %.2f",avg);
+
+
+    //// mediana
+    void swap(int * p,int *q)
+    {
+        int t;
+        
+        t=*p;
+        *p=*q;
+        *q=t;
+    }
+    
+    void sort(int a[],int n)
+    {
+        int i,j,temp;
+        
+        for (i=0;i<n-1;i++)
+        {
+            for(j=0;j<n-i-1;j++)
+            {
+            if(a[j>a[j+1])
+            swap(&a[j,&a[j+1]);
+            }
+        }
+    }
+   int main()
+   {
+       
+       printf("\n cik skaitlus ievadisi: ");
+       scanf("%d", &n);
+       printf("\n ievadi skaitlus: ");
+       scanf("%f", &a[n]);
+       
+       sort(a,n);
+       
+       n=(n+1)/2-1;
+       
+       printf("mediana ir: %d", a[n])
+
+///////////// alfabetiski un cipari pec kartas
+
+
+#include<stdio.h>
+#include<string.h>
+int main(){
+   int i,j,count;
+   char str[25][25],temp[25];
+   printf("ievadi burtu vai vardu skaitu: ");
+   scanf("%d",&count);
+
+   printf("ievadi pa vienam: ");
+   for(i=0;i<=count;i++)
+      gets(str[i]);
+   for(i=0;i<=count;i++)
+      for(j=i+1;j<=count;j++){
+         if(strcmp(str[i],str[j])>0){
+            strcpy(temp,str[i]);
+            strcpy(str[i],str[j]);
+            strcpy(str[j],temp);
+         }
+      }
+   printf("sakartota seciba ir:");
+   for(i=0;i<=count;i++)
+      printf(str[i]);
+
+   return 0;
+}
+
+       
+       
+   }
