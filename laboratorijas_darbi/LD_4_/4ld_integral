@@ -1,0 +1,76 @@
+ #include <stdio.h>
+#include <math.h>
+
+void main()
+{
+  int k,n=2;
+  float a,b,prx,h,x,intgr2,intgr1s,intgr2s,summ;
+  float integer1 = 0;
+
+  printf("Luudzu ievadiet vertibu a: ");
+  scanf("%f", &a);
+  printf("\n Luudzu ievadiet vertibu b: ");
+  scanf("%f", &b);
+  printf("\n Luudzu ievadiet precizitaates vertibu: ");
+  scanf("%f", &prx);
+// taisnstura metode
+    intgr2=(0.5)*(b-a)*(j0(a/2)+ j0(b/2))/n;
+
+    while(fabs(intgr2-integer1)>prx)
+    {
+        n*=2;
+        h=(b-a)/n;
+        integer1 = intgr2;
+        intgr2 = 0;
+            for(k=0;k<n;k++)
+            {
+                intgr2 +=h*j0((a+(k+0.5)*h)/2);
+
+            }
+    }
+        printf("integrala vertiba ar taisnstura metodi: %.2f\n",intgr2);
+  //trapeces metode:
+  n=2;
+  integer1 = 0;
+  h = (b-a)/n;
+  intgr2 = (0.5)*h*(j0(a/2) + j0(b/2))/n;
+
+  while (fabs(intgr2-integer1)>prx)
+    {
+    n*=2;
+    h=(b-a)/n;
+    integer1 = intgr2;
+    intgr2 = 0;
+        for(k=0;k<n; k++)
+        intgr2+= (h*(j0((a+(k+0.5)*h)/2)+j0((b+(k+0.5)*h)/2)))/2;
+
+    }
+  printf("integrala vertiba ar trapeces metodi: %2f\n", intgr2);
+
+ //simpsona metode
+n = 2;
+integer1 =0;
+h=(b-a)/n;
+intgr2s = (h/3)+(j0(a/2)+j0(b/2)+4*j0((a+b)/4));
+
+    while (fabs(intgr2s-integer1)>prx)
+    {
+        n*=2;
+        h=(b-a)/n;
+        integer1 = intgr2s;
+        intgr2s = 0;
+            for(k=0;k<n;k++)
+            {
+                intgr2s += h/6*(j0((a+h*k)/2)+4*j0((2*a+2*h*k+h)/2/2)+j0((a+h*k+h)/2));
+
+            }
+        printf("\n integrala vertiba ar simpsona metodi: %.2f\n",intgr2s);
+    }
+
+
+
+
+
+    return 0;
+}
+
