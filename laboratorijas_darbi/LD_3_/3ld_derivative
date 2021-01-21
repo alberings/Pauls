@@ -1,0 +1,14 @@
+ #include <stdio.h>
+#include <math.h>
+
+float a, b, y, x, d1x, d2x, prx;
+
+{
+  printf ("Ievadi sakuma vertibu: ");
+  scanf ("%f", &a);
+    printf ("Ievadi beigu vertibu: ");
+  scanf ("%f", &b);
+    printf ("Ievadi precizitati: ");
+  scanf ("%f", &prx);
+
+  x=a;
