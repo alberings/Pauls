@@ -1,14 +1,23 @@
- #include <stdio.h>
+#include <stdio.h>
 #include <math.h>
 
-float a, b, y, x, d1x, d2x, prx;
 
-{
-  printf ("Ievadi sakuma vertibu: ");
+  float a,b,x,prx;
+  void main()
+  {
+     printf ("Ievadi sakuma vertibu: ");
   scanf ("%f", &a);
     printf ("Ievadi beigu vertibu: ");
   scanf ("%f", &b);
     printf ("Ievadi precizitati: ");
   scanf ("%f", &prx);
+// skaitliskaa
+      printf("\tx\t\t cos(x)\t\tcos\'(x)\n");
+      x = a;
+      while(x<b)
+      {
+         printf("%10.2f\t%10.2f\t%10.2f\n",x,cos(x),(cos(x+prx)-cos(x))/prx);
 
-  x=a;
+         x+= prx;
+      }
+  }
