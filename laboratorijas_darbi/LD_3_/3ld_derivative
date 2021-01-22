@@ -1,46 +1,58 @@
-#include <stdio.h>
-#include <math.h>
+#include<stdio.h>
+#include<math.h>
+#define N 10
+
+double f(double x)
+{
+    return cos(x);
+}
+
+double fp(double x)
+{
+    return sin(x);
+}
+
+double fpp(double x)
+{
+    return -cos(x);
+}
 
 
-  float a,b,x,prx,c;
-  void main()
-  {
-     printf ("Ievadi sakuma vertibu: ");
-  scanf ("%f", &a);
-    printf ("Ievadi beigu vertibu: ");
-  scanf ("%f", &b);
-    printf ("Ievadi precizitati: ");
-  scanf ("%f", &prx);
-  printf("\n 1=skaitliskaa; 2=analitiskaa formula\n");
-  printf("ievadi vajadzigas darbibas skaitli: ");
-  scanf("%f",&c);
+int main()
+{
+    double x[N], y[N], yp[N-1], ypp[N-2], dx = 0.01, a=0;
+    int i;
 
-  if (c=1)
+    for(i=0;i<N;i++)
     {
-
-
-      printf("\tx\t\t cos(x)\t\tcos\'(x)\n");
-      x = a;
-      while(x<b)
-      {
-         printf("%10.2f\t%10.2f\t%10.2f\n",x,cos(x),(cos(x+prx)-cos(x))/prx);
-
-         x+= prx;
-      }
+        x[i] = a + i*dx;
+        y[i] = f(x[i]);
     }
 
-  if (c=2)
+    for(i=0;i<N-1;i++)
     {
+        yp[i] = (y[i+1]-y[i]) / (x[i+1]-x[i]);
 
-
-
-      printf("\tx\t\t cos(x)\t\tcos\'(x)\n");
-      x=a;
-      while (x<b)
-      {
-          printf("%10.2f\t%10.2f\t%10.2f\n",x,cos(x),(cos(x)-cos(x-prx))/prx);
-          x+=prx;
-      }
     }
 
-  }
+    for(i=0;i<N-2;i++)
+    {
+        ypp[i]=(yp[i+1]-yp[i]) / (x[i+1]-x[i]);
+
+    }
+
+    printf("|%10s|%10s|%10s|%10s|%10s|%10s|\n","x","y","y\'a","y\'sk","y\'\'a","y\'\'sk");
+
+    for(i=0;i<N-2;i++)
+    {
+        printf("|%10.3f|%10.3f|%10.3f|%10.3f|%10.3|f%10.3f|\n",x[i],y[i],fp(x[i]),yp[i],fpp(x[i]),ypp[i]);
+
+    }
+    printf("|%10.3f|%10.3f|%10.3f|%10.3f|%10.3f|%10s|\n",x[i],y[i],fp(x[i]),yp[i],fpp(x[i]),"nav");
+    i++;
+    printf("|%10.3f|%10.3f|%10.3f|%10s|%10.3f|%10s|\n",x[i],y[i],fp(x[i]),"nav",fpp(x[i]),"nav");
+
+    return 0;
+}
+
+
