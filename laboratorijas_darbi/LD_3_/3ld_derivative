@@ -2,7 +2,7 @@
 #include <math.h>
 
 
-  float a,b,x,prx;
+  float a,b,x,prx,c;
   void main()
   {
      printf ("Ievadi sakuma vertibu: ");
@@ -11,7 +11,14 @@
   scanf ("%f", &b);
     printf ("Ievadi precizitati: ");
   scanf ("%f", &prx);
-// skaitliskaa
+  printf("\n 1=skaitliskaa; 2=analitiskaa formula\n");
+  printf("ievadi vajadzigas darbibas skaitli: ");
+  scanf("%f",&c);
+
+  if (c=1)
+    {
+
+
       printf("\tx\t\t cos(x)\t\tcos\'(x)\n");
       x = a;
       while(x<b)
@@ -20,4 +27,20 @@
 
          x+= prx;
       }
+    }
+
+  if (c=2)
+    {
+
+
+
+      printf("\tx\t\t cos(x)\t\tcos\'(x)\n");
+      x=a;
+      while (x<b)
+      {
+          printf("%10.2f\t%10.2f\t%10.2f\n",x,cos(x),(cos(x)-cos(x-prx))/prx);
+          x+=prx;
+      }
+    }
+
   }
