@@ -20,10 +20,12 @@ double fpp(double x)
 
 int main()
 {
-    double x[N], y[N], yp[N-1], ypp[N-2], dx, a;
+    double x[N], y[N], yp[N-1], ypp[N-2], dx, a, b;
     int i;
     printf("ievadiet sakuma veertibu: ");
     scanf("%lf", &a);
+    printf("ievadiet b vertibu: ");
+    scanf("%lf", &b);
     printf("ievadiet precizitates veertibu: ");
     scanf("%lf", &dx);
     for(i=0;i<N;i++)
