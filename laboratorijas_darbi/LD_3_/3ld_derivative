@@ -20,9 +20,12 @@ double fpp(double x)
 
 int main()
 {
-    double x[N], y[N], yp[N-1], ypp[N-2], dx = 0.01, a=0;
+    double x[N], y[N], yp[N-1], ypp[N-2], dx, a;
     int i;
-
+    printf("ievadiet sakuma veertibu: ");
+    scanf("%lf", &a);
+    printf("ievadiet precizitates veertibu: ");
+    scanf("%lf", &dx);
     for(i=0;i<N;i++)
     {
         x[i] = a + i*dx;
@@ -37,7 +40,7 @@ int main()
 
     for(i=0;i<N-2;i++)
     {
-        ypp[i]=(yp[i+1]-yp[i]) / (x[i+1]-x[i]);
+        ypp[i] = (yp[i+1]-yp[i]) / (x[i+1]-x[i]);
 
     }
 
@@ -45,7 +48,7 @@ int main()
 
     for(i=0;i<N-2;i++)
     {
-        printf("|%10.3f|%10.3f|%10.3f|%10.3f|%10.3|f%10.3f|\n",x[i],y[i],fp(x[i]),yp[i],fpp(x[i]),ypp[i]);
+        printf("|%10.3f|%10.3f|%10.3f|%10.3f|%10.3f|%10.3f|\n",x[i],y[i],fp(x[i]),yp[i],fpp(x[i]),ypp[i]);
 
     }
     printf("|%10.3f|%10.3f|%10.3f|%10.3f|%10.3f|%10s|\n",x[i],y[i],fp(x[i]),yp[i],fpp(x[i]),"nav");
