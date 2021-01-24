@@ -13,7 +13,7 @@ int main()
     printf("cos aprekinasana. \n");
     printf("ievadi argumentu x: ");
     scanf("%f", &x);
-    printf(" cos(%f)= \n",x);
+    printf(" cos(%f)= %f \n",x, cos(x));
     printf("\n a0 = %f s0 = %f \n",x,x);
     for (i=1;i<n2;i++)
     {
