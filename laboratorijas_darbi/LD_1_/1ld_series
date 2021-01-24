@@ -44,6 +44,8 @@ int main()
     printf("\n\n                              2      \n");
     printf("                              (-x)     \n");
     printf("   rekurences reizinatajs: __________   \n");
-    printf("                            2*k*(2*k-1)) \n\n");
+    printf("                            2*k*(2*k-1) \n\n");
     return 0;
 }
+
+
